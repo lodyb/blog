@@ -1,0 +1,19 @@
+{
+  "name": "lody-blog",
+  "version": "0.1.0",
+  "description": "The personal homepage of Lewis White",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lodyb/blog.git"
+  },
+  "author": "Lewis White",
+  "license": "zlib",
+  "bugs": {
+    "url": "https://github.com/lodyb/blog/issues"
+  },
+  "homepage": "https://github.com/lodyb/blog#readme"
+}
