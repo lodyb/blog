@@ -1,9 +1,9 @@
-<!doctype html>
-<head>
-	<title>My test blog</title>
-	<meta charset="utf8">
-</head>
-<body>
-	<h1>I'm just a view!</h1>
-</body>
-</body>
+{{#push "stylesheets"}}
+<link rel="stylesheet" href="/app.css"/>
+{{/push}}
+
+<p>This text was injected in by Handlebars!</p>
+
+{{#push "scripts"}}
+<script>console.info(+new Date);</script>
+{{/push}}
