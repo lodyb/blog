@@ -14,18 +14,16 @@ hbs.registerHelper('push', function(name, context) {
     if (!stack) {
         stack = stacks[name] = [];
     }
-
-    stack.push(context.fn(this)); // for older versions of handlebars, use stack.push(context(this));
+    stack.push(context.fn(this));
 });
 
 hbs.registerHelper('stack', function(name) {
     var val = (stacks[name] || []).join('\n');
 
-    // clear the stack
     stacks[name] = [];
     return val;
-})
-;
+});
+
 app.get('/', function (req, res) {
     res.render('index');
 });
