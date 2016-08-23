@@ -16,6 +16,7 @@ body{
 main{
     width:24rem;
     position:absolute;
+    background:rgba(55,255,175,0.47);
     top:50%;
     left:50%;
     margin-top:-5rem;
