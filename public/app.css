@@ -4,28 +4,63 @@
 }
 html{
     font:20px/24px Georgia, 'Times New Roman', 'Liberation Serif';
-    background:#757;
+    height:100%;
 }
 body{
-    margin:0;
-    padding-top:2rem;
+    background:#1B4859 url('/me.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#000;
 }
 main{
-    max-width:32rem;
-    padding:1rem;
-    margin:2rem auto;
-
+    width:24rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-5rem;
+    margin-left:-12rem;
+    font-size:0;
+    outline:4px solid #000;
+    outline-offset:-4px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 h1{
     margin:0;
     padding:0;
     font-size:2rem;
-    color:#df0;
+    margin-bottom:1rem;
 }
 p{
     margin:0;
-    color:#df0;
+    font-size:0.9rem;
+    font-weight:bold;
 }
-main>*+*{
-    margin-top:1rem;
+main>aside{
+    display:inline-block;
+    width:15.5rem;
+    vertical-align:2.4rem;
+}
+svg{
+    width:8rem;
+    height:10rem;
+    padding:2rem;
+    padding-right:1.5rem;
+    padding-top:3rem;
+    margin-left:0.5rem;
+    display:inline-block;
+}
+svg #top{
+    fill:rgba(0,0,0,0.5);
+}
+svg #left{
+    fill:rgba(0,0,0,0.95);
+}
+svg #right{
+    fill:rgba(0,0,0,0.75);
 }
