@@ -26,6 +26,15 @@
     </aside>
 </main>
 
+<section class="gallery">
+{{#each figure}}
+    <a href="{{ this.href }}">
+        <div style="background-image:url('{{ this.bg }}')"></div>
+        <p>{{ title }}</p>
+    </a>
+{{/each}}
+</section>
+
 {{#push "scripts"}}
 <script>console.info(+new Date);</script>
 {{/push}}

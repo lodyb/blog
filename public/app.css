@@ -9,18 +9,17 @@ html{
 body{
     background:#1B4859 url('/me.jpg');
     background-position:center;
+    background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
     color:#4c20ff;  
+    padding-bottom:4rem;
+    margin:0;
 }
 main{
     width:24rem;
-    position:absolute;
     background:rgba(55,255,175,0.47);
-    top:50%;
-    left:50%;
-    margin-top:-5rem;
-    margin-left:-12rem;
+    margin:4rem auto 3rem auto;
     font-size:0;
     outline:4px solid #4c20ff;  
     outline-offset:-4px;
@@ -64,4 +63,36 @@ svg #left{
 }
 svg #right{
     fill:rgba(76,32,255,0.75);
+}
+
+section{
+    max-width:36rem;
+    width:100%;
+    outline:4px solid red;
+    margin:0 auto;
+    padding:2rem;
+    padding-bottom:0;
+    font-size:0;
+}
+section>a{
+    position:relative;
+    display:inline-block;
+    width:calc((100% / 3) - (1.5rem / 1.5));
+    color:#4c20ff;
+    text-decoration:none;
+}
+section>a>div{
+    position:relative;
+    padding-top:100%;
+    outline:4px solid black;
+}
+section>a:nth-of-type(3n+2),
+section>a:nth-of-type(3n+3){
+    margin-left:1.5rem;
+}
+section>a>p{
+    position:relative;
+    padding-top:0.5rem;
+    height:4rem;
+    text-align:center;
 }
