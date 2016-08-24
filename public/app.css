@@ -11,7 +11,7 @@ body{
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-    color:#000;
+    color:#4c20ff;  
 }
 main{
     width:24rem;
@@ -22,7 +22,7 @@ main{
     margin-top:-5rem;
     margin-left:-12rem;
     font-size:0;
-    outline:4px solid #000;
+    outline:4px solid #4c20ff;  
     outline-offset:-4px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -57,11 +57,11 @@ svg{
     display:inline-block;
 }
 svg #top{
-    fill:rgba(0,0,0,0.5);
+    fill:rgba(76,32,255,0.5);
 }
 svg #left{
-    fill:rgba(0,0,0,0.95);
+    fill:rgba(76,32,255,0.95);
 }
 svg #right{
-    fill:rgba(0,0,0,0.75);
+    fill:rgba(76,32,255,0.75);
 }
