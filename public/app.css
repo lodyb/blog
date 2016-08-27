@@ -7,21 +7,20 @@ html{
     height:100%;
 }
 body{
-    background:#1B4859 url('/me.jpg');
-    background-position:center;
+    background:url('/spider.png'), linear-gradient(to bottom right, #EB0735 0%, #47000A 100%);
+    background-position:bottom right;
     background-attachment:fixed;
-    background-size:cover;
+    background-size:initial;
     background-repeat:no-repeat;
-    color:#4c20ff;  
+    color:#ffffff;  
     padding-bottom:4rem;
     margin:0;
 }
 main{
     width:24rem;
-    background:rgba(55,255,175,0.47);
     margin:4rem auto 3rem auto;
     font-size:0;
-    outline:4px solid #4c20ff;  
+    outline:4px solid #ffffff;  
     outline-offset:-4px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -56,19 +55,19 @@ svg{
     display:inline-block;
 }
 svg #top{
-    fill:rgba(76,32,255,0.5);
+    fill:rgba(255,255,255,0.5);
 }
 svg #left{
-    fill:rgba(76,32,255,0.95);
+    fill:rgba(255,255,255,0.95);
 }
 svg #right{
-    fill:rgba(76,32,255,0.75);
+    fill:rgba(255,255,255,0.75);
 }
 
 section{
     max-width:36rem;
     width:100%;
-    outline:4px solid red;
+    outline:4px solid #ffffff;
     margin:0 auto;
     padding:2rem;
     padding-bottom:0;
@@ -78,21 +77,28 @@ section>a{
     position:relative;
     display:inline-block;
     width:calc((100% / 3) - (1.5rem / 1.5));
-    color:#4c20ff;
+    color:#ffffff;
     text-decoration:none;
+    vertical-align:top;
+    margin-bottom:1.5rem;
 }
 section>a>div{
-    position:relative;
-    padding-top:100%;
+    position:static;
+    display:table;
+    height:calc(100% / 3);
+    width:100%;
     outline:4px solid black;
 }
 section>a:nth-of-type(3n+2),
 section>a:nth-of-type(3n+3){
     margin-left:1.5rem;
 }
-section>a>p{
-    position:relative;
-    padding-top:0.5rem;
-    height:4rem;
+section>a>div>p{
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    display:table-cell;
+    vertical-align:middle;
     text-align:center;
 }
